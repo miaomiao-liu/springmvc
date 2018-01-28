@@ -13,6 +13,16 @@ public class SpringMVCTest {
     private static final String SUCCESS = "success";
 
     /**
+     * 了解：
+     * 映射一个Cookie值，用法同@RequestParam
+     */
+    @RequestMapping("/testCookieValue")
+    public String testCookieValue(@CookieValue("JSESSIONID") String sessionId){
+        System.out.println("testCookieValue , JSESSIONID:" + sessionId);
+        return SUCCESS;
+    }
+
+    /**
      * 了解：映射请求头信息，用法同@RequestParam
      */
     @RequestMapping("/testRequestHeader")
