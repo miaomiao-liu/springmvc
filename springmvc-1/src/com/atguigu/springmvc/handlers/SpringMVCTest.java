@@ -1,5 +1,6 @@
 package com.atguigu.springmvc.handlers;
 
+import com.atguigu.springmvc.entities.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,16 @@ import org.springframework.web.bind.annotation.*;
 public class SpringMVCTest {
 
     private static final String SUCCESS = "success";
+
+    /**
+     * SpringMVC会按照请求参数名和POJO属性名进行自动匹配，
+     * 自动为对象填充属性值，支持级联
+     */
+    @RequestMapping("/testPojo")
+    public String testPojo(User user){
+        System.out.println("testPojo:" + user);
+        return SUCCESS;
+    }
 
     /**
      * 了解：
