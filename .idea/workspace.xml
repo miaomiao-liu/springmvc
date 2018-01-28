@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee171912-1e35-4967-bd05-1309f1cdac03" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/entities/User.java" afterPath="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/entities/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/handlers/SpringMVCTest.java" afterPath="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/handlers/SpringMVCTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc-1/web/WEB-INF/views/success.jsp" afterPath="$PROJECT_DIR$/springmvc-1/web/WEB-INF/views/success.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvc-1/web/index.jsp" afterPath="$PROJECT_DIR$/springmvc-1/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +27,8 @@
       <file leaf-file-name="SpringMVCTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/handlers/SpringMVCTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+            <state relative-caret-position="247">
+              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,11 +36,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/entities/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="64" column="71" lean-forward="false" selection-start-line="64" selection-start-column="71" selection-end-line="64" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvc-1/web/WEB-INF/views/success.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springmvc-1/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="252">
+              <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -92,12 +114,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/handlers/HelloWorld.java" />
-        <option value="$PROJECT_DIR$/springmvc-1/web/WEB-INF/views/success.jsp" />
         <option value="$PROJECT_DIR$/springmvc-1/src/springmvc.xml" />
         <option value="$PROJECT_DIR$/springmvc-1/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/entities/User.java" />
         <option value="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/entities/Address.java" />
+        <option value="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/entities/User.java" />
         <option value="$PROJECT_DIR$/springmvc-1/web/index.jsp" />
+        <option value="$PROJECT_DIR$/springmvc-1/web/WEB-INF/views/success.jsp" />
         <option value="$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/handlers/SpringMVCTest.java" />
       </list>
     </option>
@@ -1039,12 +1061,12 @@
       <workItem from="1516963677686" duration="612000" />
       <workItem from="1517018142719" duration="599000" />
       <workItem from="1517036281209" duration="919000" />
-      <workItem from="1517115019311" duration="14140000" />
+      <workItem from="1517115019311" duration="17885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22196000" />
+    <option name="totallyTimeSpent" value="25941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1070,11 +1092,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32636657" sideWeight="0.49722" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23954985" sideWeight="0.49722" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861" sideWeight="0.49438202" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.505618" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861" sideWeight="0.48448688" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24861" sideWeight="0.5155131" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.505618" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1276,14 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc-1/web/WEB-INF/views/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/springmvc-1/web/WEB-INF/lib/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/filter/HiddenHttpMethodFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1319,45 +1333,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/entities/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1011">
-          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-          <folding>
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="129">
+          <caret line="64" column="71" lean-forward="false" selection-start-line="64" selection-start-column="71" selection-end-line="64" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc-1/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="252">
+          <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc-1/web/WEB-INF/views/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc-1/src/com/atguigu/springmvc/handlers/SpringMVCTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        <state relative-caret-position="247">
+          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

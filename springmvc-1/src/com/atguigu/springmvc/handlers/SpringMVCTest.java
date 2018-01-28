@@ -3,21 +3,58 @@ package com.atguigu.springmvc.handlers;
 import com.atguigu.springmvc.entities.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Writer;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Map;
 
 /**
  * Created by miaomiao on 18-1-28.
  */
+@SessionAttributes(value = "user",types = {String.class})
 @RequestMapping("/springmvc")
 @Controller
 public class SpringMVCTest {
 
     private static final String SUCCESS = "success";
 
+    /**
+     *@SessionAttributes :除了可以通过属性名指定需要放入会话中的属性外（value属性）
+     *      还可以通过模型属性的对象类型指定哪些模型属性需要放入会话中（type属性）
+     *
+     * 注意：该注解只能修饰类，不能放在方法上
+     */
+    @RequestMapping("/testSessionAttributes")
+    public String testSessionAttributes(Map<String,Object> map){
+        map.put("user",new User("Tom","123456","tom@atguigu.com",11));
+        map.put("school","atguigu");
+        return SUCCESS;
+    }
+
+    /**
+     * 目标方法可以添加Map类型（也可以是Model或ModelMap类型）的参数
+     */
+    @RequestMapping("/testMap")
+    public String testMap(Map<String,Object> map){
+        map.put("names", Arrays.asList("Tom","Mike","Jerry"));
+        return SUCCESS;
+    }
+
+    /**
+     * 目标方法返回值可以是ModelAndView 类型，
+     */
+    @RequestMapping("/testModelAndView")
+    public ModelAndView testModelAndView(){
+        String viewName = SUCCESS;
+        ModelAndView modelAndView = new ModelAndView(viewName);
+        modelAndView.addObject("time",new Date());
+        return modelAndView;
+    }
     /**
      * 可以使用Servlet原生的API作为目标方法的参数
      * 具体支持以下类型：

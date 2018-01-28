@@ -12,7 +12,25 @@
 </head>
 <body>
 
-    <h4>Success Page</h4>
+<h4>Success Page</h4>
+
+time:${requestScope.time}
+<br><br>
+
+names:${requestScope.names}
+<br><br>
+
+request user:${requestScope.user}
+<br><br>
+
+session user:${sessionScope.user}
+<br><br>
+
+request school:${requestScope.school}
+<br><br>
+
+session school:${sessionScope.school}
+<br><br>
 
 </body>
 </html>
