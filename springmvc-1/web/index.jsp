@@ -12,6 +12,10 @@
 </head>
 <body>
 
+
+<a href="springmvc/testRequestHeader">Test RequestHeader</a>
+
+<br><br>
 <a href="springmvc/testRequestParam?username=atguigu&age=11">Test RequestParam</a>
 
 <br><br>
