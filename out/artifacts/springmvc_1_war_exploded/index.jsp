@@ -12,6 +12,9 @@
 </head>
 <body>
 
+<a href="springmvc/testServletAPI">Test ServletAPI</a>
+
+<br><br>
 <form action="springmvc/testPojo" method="post">
     username:<input type="text" name="username">
     <br>
