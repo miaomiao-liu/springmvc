@@ -12,6 +12,9 @@
 </head>
 <body>
 
+<a href="springmvc/testRequestParam?username=atguigu&age=11">Test RequestParam</a>
+
+<br><br>
 <form action="springmvc/testRest/1" method="post">
     <input type="hidden" name="_method" value="PUT">
     <input type="submit" value="Test Rest PUT">
