@@ -23,6 +23,36 @@ public class SpringMVCTest {
 
     private static final String SUCCESS = "success";
 
+
+    /**
+     * 被@ModelAttribute标记的方法，会在每个目标方法执行之前被SpringMVC调用
+     */
+    @ModelAttribute
+    public void getUser(@RequestParam(value = "id",required = false) Integer id,
+                        Map<String,Object> map){
+        if (id != null){
+            //模拟从数据库中获取的对象
+            User user = new User(1,"Tom","123456","tom@atguigu",12);
+            System.out.println("从数据库中获取一个对象：" + user);
+
+            //map中放入键值对的键必须和目标方法入参参数类型第一个字母小写的字符串一致
+            map.put("user",user);
+        }
+    }
+
+    /**
+     * 两方法之间的运行流程：
+     * 1.执行@ModelAttribute注释修饰的方法：从数据库中取出对象,把对象放入Map中，键为：user
+     * 2.SpringMVC从Map中取出user对象，并把表单请求从参数赋值给对应属性
+     * 3.SpringMVC把上述对象传入目标方法
+     */
+
+    @RequestMapping("/testModelAttribute")
+    public String testModelAttribute(User user){
+        System.out.println("修改： " + user);
+        return SUCCESS;
+    }
+
     /**
      *@SessionAttributes :除了可以通过属性名指定需要放入会话中的属性外（value属性）
      *      还可以通过模型属性的对象类型指定哪些模型属性需要放入会话中（type属性）
