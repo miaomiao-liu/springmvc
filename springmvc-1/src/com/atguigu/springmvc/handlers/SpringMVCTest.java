@@ -23,6 +23,22 @@ public class SpringMVCTest {
 
     private static final String SUCCESS = "success";
 
+    /**
+     * 如果返回字符串中带redirect:或forward:前缀时,SpringMVC会执行特殊操作：
+     * redirect:重定向
+     * forward:转发
+     */
+    @RequestMapping("/testRedirect")
+    public String testRedirect(){
+        System.out.println("testRedirect");
+        return "redirect:/index.jsp";
+    }
+
+    @RequestMapping("/testView")
+    public String testView(){
+        System.out.println("testView");
+        return "helloView";
+    }
 
     /**
      * 加入jstl-1.1.2.jar standard-1.1.2.jar
