@@ -25,6 +25,17 @@ public class SpringMVCTest {
 
 
     /**
+     * 加入jstl-1.1.2.jar standard-1.1.2.jar
+     * InternalResourceViewResolver自动变为jstlView
+     * @return
+     */
+    @RequestMapping("/testViewAndViewResolver")
+    public String testViewAndViewResolver(){
+        System.out.println("testViewAndViewResolver");
+        return SUCCESS;
+    }
+
+    /**
      * 被@ModelAttribute标记的方法，会在每个目标方法执行之前被SpringMVC调用
      */
     @ModelAttribute
