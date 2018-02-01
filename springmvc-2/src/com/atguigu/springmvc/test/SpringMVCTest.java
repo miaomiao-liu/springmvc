@@ -16,6 +16,7 @@ public class SpringMVCTest {
     @Autowired
     private EmployeeDao employeeDao;
 
+    //自定义类型转换器
     @RequestMapping("/testConversionServiceConverter")
     public String testConverter(@RequestParam("employee")Employee employee){
         System.out.println("save:" + employee);

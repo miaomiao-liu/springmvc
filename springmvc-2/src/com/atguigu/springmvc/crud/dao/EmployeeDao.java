@@ -35,7 +35,8 @@ public class EmployeeDao {
         if (employee.getId() == null){
             employee.setId(initId++);
         }
-        employee.setDepartment(departmentDao.getDepartment(employee.getDepartment().getId()));
+        //由于form:select下拉框无法显示，不能设置department属性，所以先注释这条语句，以免控制整异常
+//        employee.setDepartment(departmentDao.getDepartment(employee.getDepartment().getId()));
         employees.put(employee.getId(),employee);
     }
 

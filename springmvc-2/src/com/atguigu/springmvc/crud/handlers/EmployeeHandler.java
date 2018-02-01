@@ -5,6 +5,9 @@ import com.atguigu.springmvc.crud.dao.EmployeeDao;
 import com.atguigu.springmvc.crud.entities.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -49,8 +52,19 @@ public class EmployeeHandler {
         return "redirect:/emps";
     }
 
+    //保存添加的员工
+    //测试数据的格式化 ， 打印出错字段及器错误信息
     @RequestMapping(value = "/emp",method = RequestMethod.POST)
-    public String save(Employee employee){
+    public String save(Employee employee, BindingResult result){
+        System.out.println("save:" + employee);
+        //打印出错字段及器错误信息
+        if (result.getErrorCount() > 0){
+            System.out.println("出错了！");
+            for (FieldError error : result.getFieldErrors()){
+                System.out.println(error.getField() + ":" + error.getDefaultMessage());
+            }
+        }
+
         employeeDao.save(employee);
         return "redirect:/emps";
     }
@@ -66,5 +80,14 @@ public class EmployeeHandler {
     public String list(Map<String,Object> map){
         map.put("employees",employeeDao.getAll());
         return "list";
+    }
+
+    /**
+     * @InitBinder 可以对 WebDataBinder 对象进行初始化，
+     * WebDataBinder 是DataBinder 的子类，用于完成由表单字段到 JavaBean 属性的绑定
+     */
+    @InitBinder
+    public void initBinder(WebDataBinder binder){
+        binder.setDisallowedFields("lastName");
     }
 }

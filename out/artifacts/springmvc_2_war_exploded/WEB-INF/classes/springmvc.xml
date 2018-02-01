@@ -19,7 +19,9 @@
     -->
     <mvc:default-servlet-handler/>
 
-    <mvc:annotation-driven conversion-service="conversionService"/>
+    <mvc:annotation-driven/>
+
+    <!--<mvc:annotation-driven conversion-service="conversionService"/>-->
 
     <!--配置ConversionService-->
     <bean id="conversionService"
