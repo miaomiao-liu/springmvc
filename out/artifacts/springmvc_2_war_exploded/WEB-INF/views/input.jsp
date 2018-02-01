@@ -15,8 +15,18 @@
     <title>Title</title>
 </head>
 <body>
+
+<form action="testConversionServiceConverter" method="post">
+    <%--格式为：lastname-email-gender-department.id---%>
+    Employee: <input type="text" name="employee">
+        <input type="submit" value="Submit">
+</form>
+
+<br><br>
+
 <form:form action="${pageContext.request.contextPath}/emp" method="post" modelAttribute="employee">
 
+    <%--如果id为空，则为添加employee，显示lastName--%>
     <c:if test="${employee.id == null}">
     <!--path属性对应html表单属性的name属性-->
     LastName：<form:input path="lastName"></form:input>
