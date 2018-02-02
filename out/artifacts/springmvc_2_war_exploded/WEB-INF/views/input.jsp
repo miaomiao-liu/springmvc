@@ -16,6 +16,7 @@
 </head>
 <body>
 
+<%--数据类型转换--%>
 <form action="testConversionServiceConverter" method="post">
     <%--格式为：lastname-email-gender-department.id---%>
     Employee: <input type="text" name="employee">
@@ -23,6 +24,9 @@
 </form>
 
 <br><br>
+
+
+<form:errors path="*"></form:errors>
 
 <form:form action="${pageContext.request.contextPath}/emp" method="post" modelAttribute="employee">
 
@@ -51,6 +55,15 @@
     Department：<form:select path="department.id" items="${deparments}"
                             itemLabel="departmentName" itemValue="id"></form:select>
     <br>
+    <%--
+    1.数据类型转换
+    2.数据类型格式化
+    3.数据校验  ： 使用JSR 303 验证标准
+                  加入hibernate validator 验证框架的jar包
+                  在SpringMVC配置中加入<mvc:annotation-driven/>
+                  需要在bean的属性上添加对应的注解
+                  在目标方法 bean 类型的前面添加@Valid注解
+    --%>
     Birth：<form:input path="birth"/>
     <br>
     Salary：<form:input path="salary"/>

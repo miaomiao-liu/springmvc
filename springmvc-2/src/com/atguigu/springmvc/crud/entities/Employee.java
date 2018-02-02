@@ -9,6 +9,7 @@ import java.util.Date;
  * Created by miaomiao on 18-1-30.
  */
 public class Employee {
+
     private Integer id;
     private String lastName;
     private String email;
