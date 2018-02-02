@@ -6,6 +6,7 @@ import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
 /**
+ * 自定义类型转换器
  * Created by miaomiao on 18-2-1.
  */
 @Component

@@ -20,10 +20,6 @@
 <a href="i18n2">I18N2 PAGE</a>
 <br><br>
 
-<%--
-通过超链接切换Locale（切换中英文）
-在Springmvc配置文件中配置：SessionLocalResolver ， 配置LocaleChange]Interceptor
---%>
 <a href="i18n?locale=zh_CN">中文</a>
 <br><br>
 

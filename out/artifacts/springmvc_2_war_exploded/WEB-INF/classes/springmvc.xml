@@ -33,4 +33,24 @@
         </property>
     </bean>
 
+    <!--配置国际化资源文件-->
+    <bean id="messageSource"
+    class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="i18n"></property>
+    </bean>
+
+    <!--配置SessionLocalResolver-->
+    <bean id="localeResolver"
+      class="org.springframework.web.servlet.i18n.SessionLocaleResolver"></bean>
+
+    <!--配置LocaleChange]Interceptor-->
+    <mvc:interceptors>
+        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"></bean>
+    </mvc:interceptors>
+
+    <!--
+    <mvc:view-controller path="/i18n" view-name="i18n"></mvc:view-controller>
+    -->
+    <mvc:view-controller path="/i18n2" view-name="i18n2"></mvc:view-controller>
+
 </beans>

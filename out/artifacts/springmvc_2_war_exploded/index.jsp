@@ -36,7 +36,7 @@
 <a href="testJson" id="testJson">Test Json</a>
 <br><br>
 
-<form action="testHttpMassageConverter" method="post" enctype="multipart/form-data">
+<form action="testHttpMessageConverter" method="post" enctype="multipart/form-data">
     File:<input type="file" name="file">
     Desc:<input type="text" name="desc">
     <input  type="submit" name="Submit">
@@ -44,6 +44,10 @@
 <br><br>
 
 <a href="/testResponseEntity">Test ResponseEntity</a>
+<br><br>
+
+<a href="i18n">I18N PAGE</a>
+
 
 </body>
 </html>
