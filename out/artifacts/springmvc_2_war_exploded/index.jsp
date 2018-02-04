@@ -30,6 +30,13 @@
 </head>
 <body>
 
+
+<form action="testFileUpload" method="post" enctype="multipart/form-data">
+    File:<input type="file" name="file">
+    Desc:<input type="text" name="desc">
+    <input  type="submit" name="Submit">
+</form>
+
 <a href="emps">List All Employees</a>
 <br><br>
 
