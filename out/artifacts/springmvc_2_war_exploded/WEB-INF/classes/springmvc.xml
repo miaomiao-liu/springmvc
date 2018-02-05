@@ -68,4 +68,13 @@
         <property name="maxUploadSize" value="1024000"></property>
     </bean>
 
+    <!--配置使用 SimpleMappingExceptionResolve -->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="java.lang.ArrayIndexOutOfBoundsException">error</prop>
+            </props>
+        </property>
+    </bean>
+
 </beans>
